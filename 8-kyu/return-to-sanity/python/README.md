@@ -1,0 +1,1 @@
+This function returns something strange. What's wrong?

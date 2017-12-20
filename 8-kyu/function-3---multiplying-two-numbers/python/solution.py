@@ -1,0 +1,1 @@
+multiply = lambda x, y: float(x).__mul__(y)

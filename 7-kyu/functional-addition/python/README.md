@@ -1,0 +1,32 @@
+Create a function `add(n)`/`Add(n)` which returns a function that always adds n to any number
+
+```js
+var addOne = add(1);
+addOne(3); // 4
+
+var addThree = add(3);
+addThree(3); // 6
+```
+```python
+addOne = add(1)
+addOne(3) # 4
+
+addThree = add(3)
+addThree(3) # 6
+```
+```haskell
+addOne = add 1
+addOne 3 `shouldBe` 4
+```
+```fsharp
+addOne = add 1
+addOne 3 # 3
+```
+```swift
+addOne = add(1)
+addOne(3) // 4
+```
+```csharp
+Func<double, double> AddOne = Kata.Add(1);
+AddOne(3) => 4
+```
