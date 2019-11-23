@@ -1,6 +1,6 @@
 This series of katas will introduce you to basics of doing geometry with computers.
 
-`Vector` objects have `x`, `y`, and `z` attributes.
+`Vector` objects (`struct` in C) have `x`, `y`, and `z` attributes.
 
 Write a function calculating cross product of `Vector a` and `Vector b`.
 

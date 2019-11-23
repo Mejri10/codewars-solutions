@@ -1,0 +1,1 @@
+const maxMultiple = (divisor, bound) =>  divisor * Math.floor(bound/divisor);

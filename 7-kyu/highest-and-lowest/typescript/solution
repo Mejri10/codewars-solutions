@@ -1,0 +1,7 @@
+export class Kata {
+  static highAndLow(numbers: string): string {
+    const numbersParsed = numbers.split(' ')
+                            .map(n => parseInt(n, 10));
+    return `${Math.max(...numbersParsed)} ${Math.min(...numbersParsed)}`;
+  }
+}

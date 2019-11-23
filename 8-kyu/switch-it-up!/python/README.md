@@ -4,6 +4,4 @@ Input :: 1
 
 Output :: "One".
 
-Try using "Switch" statements.
-
-`This kata is meant for beginners. Rank and upvote to bring it out of beta`
+If your language supports it, try using a <a href="https://en.wikipedia.org/wiki/Switch_statement">switch statement</a>.

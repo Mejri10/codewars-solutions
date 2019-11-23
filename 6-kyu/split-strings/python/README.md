@@ -26,6 +26,10 @@ solution('abcdef') # should return ['ab', 'cd', 'ef']
 solution("abc") # should return ["ab", "c_"]
 solution("abcdef") # should return ["ab", "cd", "ef"]
 ```
+``` julia
+solution("abc") # should return ["ab", "c_"]
+solution("abcdef") # should return ["ab", "cd", "ef"]
+```
 ```python
 solution('abc') # should return ['ab', 'c_']
 solution('abcdef') # should return ['ab', 'cd', 'ef']
@@ -33,4 +37,16 @@ solution('abcdef') # should return ['ab', 'cd', 'ef']
 ``` haskell
 solution "abc" `shouldBe` ["ab", "c_"]
 solution "abcdef" `shouldBe` ["ab", "cd", "ef"]
+```
+``` go
+Solution("abc") //should return ["ab", "c_"]
+Solution("abcdef") //should return ["ab", "cd", "ef"]
+```
+```scala
+solution('abc')    // should return List("ab", "c_")
+solution('abcdef') // should return List("ab", "cd", "ef")
+```
+```clojure
+(solution "abc") ; => ["ab" "c_"]
+(solution "abcd") ; => ["ab" "cd"]
 ```

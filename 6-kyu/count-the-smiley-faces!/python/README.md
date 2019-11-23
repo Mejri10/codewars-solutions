@@ -1,17 +1,17 @@
 <font size="5">Description:</font><br>
-Given an array (arr) as an argument complete the function <code>countSmileys</code> that should return the total number of smiling faces.<br>
+Given an array (arr) as an argument complete the function `countSmileys` that should return the total number of smiling faces.<br>
 <font size="4">Rules for a smiling face:</font><br>
 -Each smiley face must contain a valid pair of eyes.
-Eyes can be marked as <code>:</code> or <code>;</code><br>
+Eyes can be marked as `:` or `;`<br>
 -A smiley face can have a nose but it does not have to.
-Valid characters for a nose are <code>-</code> or <code>~</code><br>
+Valid characters for a nose are `-` or `~`<br>
 -Every smiling face must have a smiling mouth that should be marked with either
-<code>)</code> or <code>D</code>.<br>
+`)` or `D`.<br>
 No additional characters are allowed except for those mentioned.<br>
 <strong>Valid smiley face examples:</strong><br>
-<code>:) :D ;-D :~)</code><br>
+`:) :D ;-D :~)`<br>
 <strong>Invalid smiley faces:</strong><br>
-<code>;( :> :} :]</code>
+`;( :> :} :]`
 <br><br>
 <strong>Example cases:</strong><br>
 ```javascript

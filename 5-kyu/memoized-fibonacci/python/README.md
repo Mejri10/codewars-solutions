@@ -30,6 +30,13 @@ fibonacci 1 = 1
 fibonacci n = fibonacci (n-1) + fibonacci (n-2)
 ```
 
+```scala
+def fibonacci(n: Int): Int = n match {
+   case 0 | 1 => n
+   case _ => fibonacci(n - 1) + fibonacci(n - 2)
+}
+```
+
 This algorithm serves welll its educative purpose but it's [tremendously inefficient](http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2.2), not only because of recursion, but because we invoke the fibonacci function twice, and the right branch of recursion (i.e. `fibonacci(n-2)`) recalculates all the Fibonacci numbers already calculated by the left branch (i.e. `fibonacci(n-1)`).
 
 This algorithm is so inefficient that the time to calculate any Fibonacci number over 50 is simply too much. You may go for a cup of coffee or go take a nap while you wait for the answer. But if you try it here in Code Wars you will most likely get a code timeout before any answers.

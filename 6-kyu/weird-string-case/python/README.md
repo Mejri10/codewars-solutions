@@ -23,3 +23,11 @@ toWeirdCase "Weird string case" `shouldBe` "WeIrD StRiNg CaSe"
 weirdcase( "String" )#=> returns "StRiNg"
 weirdcase( "Weird string case" );#=> returns "WeIrD StRiNg CaSe"
 ```
+```php
+toWeirdCase("String"); // => returns "StRiNg"
+toWeirdCase("Weird string case"); // => returns "WeIrD StRiNg CaSe"
+```
+```go
+toWeirdCase("String") // => returns "StRiNg"
+toWeirdCase("Weird string case") // => returns "WeIrD StRiNg CaSe"
+```

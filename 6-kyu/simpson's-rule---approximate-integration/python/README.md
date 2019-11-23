@@ -21,7 +21,7 @@ on the interval
 <a href="http://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\left&space;[&space;\right&space;0,\pi\left&space;\right&space;]" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\bg_white&space;\left&space;[&space;\right&space;0,\pi\left&space;\right&space;]" title="\left [ \right 0,\pi\left \right ]" /></a>
 .
 
-Don't round or truncate your results. See in "RUN EXAMPLES" the function `assertFuzzyEquals`.
+Don't round or truncate your results. See in "RUN EXAMPLES" the function `assertFuzzyEquals` or `testing`.
 `n` will always be even.
 
 Note: we know that the exact value of the integral of f on the given interval is `2`.

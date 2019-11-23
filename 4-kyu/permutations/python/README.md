@@ -12,6 +12,11 @@ permutations("a"); // => vector<string> {"a"}
 permutations("ab"); // => vector<string> {"ab", "ba"}
 permutations("aabb"); // => vector<string> {"aabb", "abab", "abba", "baab", "baba", "bbaa"}
 ```
+```php
+permutations('a'); // => ['a']
+permutations('ab'); // => ['ab', 'ba']
+permutations('aabb'); // => ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
+```
 ```ruby
 permutations('a'); # ['a']
 permutations('ab'); # ['ab', 'ba']
@@ -26,6 +31,16 @@ permutations('aabb'); # ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
 permutations    "a" `shouldBe` ["a"]
 permutations   "ab" `shouldBe` ["ab", "ba"]
 permutations "aabb" `shouldBe` ["aabb","abab","abba","baab","baba","bbaa"]
+```
+```java
+Permutations.singlePermutations("a") `shouldBe` ["a"]
+Permutations.singlePermutations("ab") `shouldBe` ["ab", "ba"]
+Permutations.singlePermutations("aabb") `shouldBe` ["aabb","abab","abba","baab","baba","bbaa"]
+```
+```csharp
+Permutations.SinglePermutations("a"); // => new List {"a"}
+Permutations.SinglePermutations("ab"); // => new List {"ab", "ba"}
+Permutations.SinglePermutations("aabb"); // => new List {"aabb", "abab", "abba", "baab", "baba", "bbaa"}
 ```
 
 The order of the permutations doesn't matter.

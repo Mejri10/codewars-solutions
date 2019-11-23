@@ -10,8 +10,8 @@ We will study the disease on a period of `tm` days. One model of propagation use
 3 differential equations:
 
 ```
-(1) s'(t) = -r * s(t) * i(t)
-(2) i'(t) =  r * s(t) * i(t) - a * i(t)
+(1) s'(t) = -b * s(t) * i(t)
+(2) i'(t) =  b * s(t) * i(t) - a * i(t)
 (3) r'(t) =  a * i(t)
 ```
 where `s(t), i(t), r(t)` are the susceptibles, infecteds, recovereds at time `t` and 
@@ -38,14 +38,18 @@ Whatever S0 and I0, R0 (number of recovereds at time 0) is always 0.
 The function `epidemic` will return the maximum number of infecteds 
 as an *integer* (truncate to integer the result of max(I)).
 
-#Example:
-    tm = 14 ;n = 336 ;s0 = 996 ;i0 = 2 ;b = 0.00206 ;a = 0.41
-    epidemic(tm, n, s0, i0, b, a) --> 483
+# Example:
+
+```
+tm = 14 ;n = 336 ;s0 = 996 ;i0 = 2 ;b = 0.00206 ;a = 0.41
+epidemic(tm, n, s0, i0, b, a) --> 483
+```
+    
 # Notes: 
+
 - You will pass the tests if
 `abs(actual - expected) <= 1`
 
-- Keeping track of the values of susceptibles, infecteds and recovereds you can plot 
-the solutions of the 3 differential equations. See an example below on the plot.
+- Keeping track of the values of susceptibles, infecteds and recovereds you can plot the solutions of the 3 differential equations. See an example below on the plot.
 
 ![alternative text](http://i.imgur.com/xB6VSqzm.png)

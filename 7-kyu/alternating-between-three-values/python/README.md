@@ -20,3 +20,6 @@ What is the most efficient way to cycle among three values? Write a function `f`
 ```javascript
   f( 3, { a:3, b:4, c:5 } ) => 4
 ```
+```c
+f(3, 3, 4, 5); // should return 4
+```

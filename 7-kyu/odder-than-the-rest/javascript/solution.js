@@ -1,0 +1,1 @@
+const oddOne = arr => arr.findIndex(n => n & 1 == 1)

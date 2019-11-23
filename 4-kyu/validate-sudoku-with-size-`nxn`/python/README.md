@@ -25,3 +25,4 @@ The data structure is a multi-dimensional Array(in Rust: `Vec<Vec<u32>>`) , ie:
 - Columns may only contain integers: `1..N (N included)`
 - *'Little squares'* (`3x3` in example above) may also only contain integers: `1..N (N included)`
 
+Note: the matrix may include non-integer elements.

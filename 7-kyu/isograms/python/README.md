@@ -2,13 +2,13 @@ An isogram is a word that has no repeating letters, consecutive or non-consecuti
 
 ```haskell
 isIsogram "Dermatoglyphics" == true
-isIsogram "moose" == false
 isIsogram "aba" == false
+isIsogram "moOse" == false -- ignore letter case
 ```
 ```javascript
-isIsogram( "Dermatoglyphics" ) == true
-isIsogram( "aba" ) == false
-isIsogram( "moOse" ) == false // -- ignore letter case
+isIsogram("Dermatoglyphics") == true
+isIsogram("aba") == false
+isIsogram("moOse") == false // -- ignore letter case
 ```
 ```python
 is_isogram("Dermatoglyphics" ) == true
@@ -19,4 +19,9 @@ is_isogram("moOse" ) == false # -- ignore letter case
 is_isogram("Dermatoglyphics" ) == true
 is_isogram("aba" ) == false
 is_isogram("moOse" ) == false # -- ignore letter case
+```
+```C
+is_isogram("Dermatoglyphics" ) == true;
+is_isogram("aba" ) == false;
+is_isogram("moOse" ) == false; // -- ignore letter case
 ```

@@ -6,8 +6,14 @@ Although this Kata is not part of an official Series, you may also want to try o
 
 ## Preloaded
 
-Preloaded for you is a class `Node` used to construct linked lists in this Kata:
+Preloaded for you is a class, struct or derived data type `Node` (depending on the language) used to construct linked lists in this Kata:
 
+```c
+typedef struct node {
+  int data;
+  struct node *next;
+} Node;
+```
 ```php
 class Node {
   public $data, $next;
@@ -94,18 +100,38 @@ class Node
 -- You can use regular lists, which are already singly-linked
 data [a] = [] | a : [a]
 ```
+```objc
+typedef struct node {
+  int data;
+  struct node *next;
+} Node;
+```
+```fortran
+type Node
+  integer :: data
+  type(Node), pointer :: next
+end type Node
+```
+
+~~~if:objc
+*NOTE: In Objective-C, the* `Node` *struct is placed on top of your main solution because there is a "double-import" bug in the Preloaded section at the time of writing (which cannot be fixed on my end).  Attempts to modify it (e.g. to cheat the tests in some way) will likely result in a test crash so it is not recommended for you to modify that section ;)*
+~~~
+
+~~~if:c
+*NOTE: In C, the* `Node` *struct is placed on top of your main solution (and the [Sample] Test Cases) because the compiler complains about not recognizing the* `Node` *datatype even after adding it to the Preloaded section.  Attempts to modify it (e.g. to cheat the tests in some way) will likely result in a test crash so it is not recommended for you to modify that section ;)*
+~~~
+
+If you are attempting this Kata in NASM then note that the code example shown directly above may not be relevant; please refer to the Sample Tests (written in C) for the exact definition of the `Node` structure.
 
 ## Prerequisites
 
-This Kata assumes that you are already familiar with the idea of a linked list.  If you do not know what that is, you may want to read up on [this article on Wikipedia](https://en.wikipedia.org/wiki/Linked_list).  Specifically, the linked lists this Kata is referring to are **singly linked lists**, where the value of a specific node is stored in its `data`/`$data`/`Data` property, the reference to the next node is stored in its `next`/`$next`/`Next`/`next_node` property and the terminator for a list is `null`/`NULL`/`None`/`nil`.
-
-Additionally, this Kata assumes that you have basic knowledge of Object-Oriented Programming (or a similar concept) in the programming language you are undertaking.  If you have not come across Object-Oriented Programming in your selected language, you may want to try out an online course or read up on some code examples of OOP in your selected language up to (but not necessarily including) Classical Inheritance.
-
-*Specifically, if you are attempting this Kata in PHP and haven't come across OOP, you may want to try out the first 4 Kata in [this Series](https://www.codewars.com/collections/object-oriented-php).*
+This Kata assumes that you are already familiar with the idea of a linked list.  If you do not know what that is, you may want to read up on [this article on Wikipedia](https://en.wikipedia.org/wiki/Linked_list).  Specifically, the linked lists this Kata is referring to are **singly linked lists**, where the value of a specific node is stored in its `data`/`$data`/`Data` property, the reference to the next node is stored in its `next`/`$next`/`Next`/`next_node` property and the terminator for a list is `null`/`NULL`/`None`/`nil`/`nullptr`/`null()`.
 
 ## Task
 
-Create a function `stringify` which accepts an argument `list`/`$list` and returns a string representation of the list.  The string representation of the list starts with the value of the current `Node`, specified by its `data`/`$data`/`Data` property, followed by a whitespace character, an arow and another whitespace character (`" -> "`), followed by the rest of the list.  The end of the string representation of a list must always end with `null`/`NULL`/`None`/`nil`/`nullptr` (all caps or all lowercase depending on the language you are undertaking this Kata in).  For example, given the following list:
+*If you are attempting this Kata in NASM, the code examples shown below may not be relevant at all - please refer to the Sample Tests (written in C) for the exact requirements.*
+
+Create a function `stringify` which accepts an argument `list`/`$list` and returns a string representation of the list.  The string representation of the list starts with the value of the current `Node`, specified by its `data`/`$data`/`Data` property, followed by a whitespace character, an arrow and another whitespace character (`" -> "`), followed by the rest of the list.  The end of the string representation of a list must always end with `null`/`NULL`/`None`/`nil`/`nullptr`/`null()` (all caps or all lowercase depending on the language you are undertaking this Kata in).  For example, given the following list:
 
 ```php
 new Node(1, new Node(2, new Node(3)))
@@ -131,10 +157,46 @@ new Node(1, new Node(2, new Node(3)))
 ```haskell
 [1,2,3]
 ```
+```objc
+&((Node){
+  .data = 1,
+  .next = &((Node){
+    .data = 2,
+    .next = &((Node){
+      .data = 3,
+      .next = NULL
+    })
+  })
+})
+```
+```c
+&((Node){
+  .data = 1,
+  .next = &((Node){
+    .data = 2,
+    .next = &((Node){
+      .data = 3,
+      .next = NULL
+    })
+  })
+})
+```
+```fortran
+type(Node), pointer :: oneTwoThree
+! Where:
+! oneTwoThree%data == 1
+! oneTwoThree%next%data == 2
+! oneTwoThree%next%next%data == 3
+! oneTwoThree%next%next%next => null()
+```
 
- ... its string representation would be:
+
+... its string representation would be:
 
 ```php
+"1 -> 2 -> 3 -> NULL"
+```
+```c
 "1 -> 2 -> 3 -> NULL"
 ```
 ```javascript
@@ -157,6 +219,12 @@ new Node(1, new Node(2, new Node(3)))
 ```
 ```haskell
 "1 -> 2 -> 3 -> null"
+```
+```objc
+@"1 -> 2 -> 3 -> NULL"
+```
+```fortran
+"1 -> 2 -> 3 -> null()"
 ```
 
 And given the following linked list:
@@ -183,12 +251,61 @@ Node.new(0, Node.new(1, Node.new(4, Node.new(9, Node.new(16)))))
 new Node(0, new Node(1, new Node(4, new Node(9, new Node(16)))))
 ```
 ```haskell
-[0,1,4,6,19]
+[0,1,4,9,16]
+```
+```objc
+&((Node){
+  .data = 0,
+  .next = &((Node){
+    .data = 1,
+    .next = &((Node){
+      .data = 4,
+      .next = &((Node){
+        .data = 9,
+        .next = &((Node){
+          .data = 16,
+          .next = NULL
+        })
+      })
+    })
+  })
+})
+```
+```c
+&((Node){
+  .data = 0,
+  .next = &((Node){
+    .data = 1,
+    .next = &((Node){
+      .data = 4,
+      .next = &((Node){
+        .data = 9,
+        .next = &((Node){
+          .data = 16,
+          .next = NULL
+        })
+      })
+    })
+  })
+})
+```
+```fortran
+type(Node), pointer :: list
+! Where:
+! list%data == 0
+! list%next%data == 1
+! list%next%next%data == 4
+! list%next%next%next%data == 9
+! list%next%next%next%next%data == 16
+! list%next%next%next%next%next => null()
 ```
 
- ... its string representation would be:
+... its string representation would be:
 
 ```php
+"0 -> 1 -> 4 -> 9 -> 16 -> NULL"
+```
+```c
 "0 -> 1 -> 4 -> 9 -> 16 -> NULL"
 ```
 ```javascript
@@ -212,9 +329,19 @@ new Node(0, new Node(1, new Node(4, new Node(9, new Node(16)))))
 ```haskell
 "0 -> 1 -> 4 -> 9 -> 16 -> null"
 ```
+```objc
+@"0 -> 1 -> 4 -> 9 -> 16 -> NULL"
+```
+```fortran
+"0 -> 1 -> 4 -> 9 -> 16 -> null()"
+```
 
-Note that `null`/`NULL`/`None`/`nil`/`nullptr` itself is also considered a valid linked list.  In that case, its string representation would simply be `"null"`/`"NULL"`/`"None"`/`"nil"`/`"nullptr"` (again, depending on the language).
+Note that `null`/`NULL`/`None`/`nil`/`nullptr`/`null()` itself is also considered a valid linked list.  In that case, its string representation would simply be `"null"`/`"NULL"`/`"None"`/`"nil"`/`"nullptr"`/`@"NULL"`/`"null()"` (again, depending on the language).
 
 For the simplicity of this Kata, you may assume that any `Node` in this Kata may only contain **non-negative integer** values.  For example, you will not encounter a `Node` whose `data`/`$data`/`Data` property is `"Hello World"`.
 
 Enjoy, and don't forget to check out my other Kata Series :D
+
+~~~if:fortran
+*NOTE: In Fortran, your returned string is* **not** *permitted to contain any leading and/or trailing whitespace.*
+~~~

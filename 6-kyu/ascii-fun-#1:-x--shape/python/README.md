@@ -1,4 +1,4 @@
-This will probably be a little serie :)
+This will probably be a little series :)
 
 <div style="background-color:black;"><h2>X-Shape</h2></div>
 
@@ -20,7 +20,7 @@ e.g.:
 </code>
 </pre>
 
-<h4> Serie: ASCII Fun</h4>
+<h4> Series: ASCII Fun</h4>
 <ul>
 <li><a href="https://www.codewars.com/kata/ascii-fun-number-1-x-shape">ASCII Fun #1: X-Shape</a></li>
 <li><a href="https://www.codewars.com/kata/ascii-fun-number-2-funny-dots">ASCII Fun #2: Funny Dots</a></li>

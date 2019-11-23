@@ -1,4 +1,4 @@
-Write a function, `calculateTip(amount, rating)` which calculates how much you need to tip based on the total amount of the bill and the service. 
+Complete the function, which calculates how much you need to tip based on the total amount of the bill and the service. 
 
 You need to consider the following ratings:
 
@@ -8,10 +8,10 @@ You need to consider the following ratings:
 - Great: tip 15%
 - Excellent: tip 20%
 
-The rating is case insensitive. If an unrecognised rating is input, then you need to return:
+The rating is **case insensitive** (so "great" = "GREAT"). If an unrecognised rating is received, then you need to return:
 
 * `"Rating not recognised"` in Javascript, Python and Ruby...
 * ...or `null` in Java
 * ...or `-1` in C#
 
-Because you're a nice person, you always round up the tip, regardless of the service.
+Because you're a nice person, you **always round up** the tip, regardless of the service.

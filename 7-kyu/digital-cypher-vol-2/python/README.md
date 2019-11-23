@@ -46,8 +46,16 @@ The `key` input is a positive integer.
 decode([ 20, 12, 18, 30, 21],1939);  ==> "scout"
 decode([ 14, 10, 22, 29, 6, 27, 19, 18, 6, 12, 8],1939);  ==>  "masterpiece"
 ```
-
+```c
+decode((unsigned char[]){20, 12, 18, 30, 21},1939);  ==> "scout"
+decode((unsigned char[]){14, 10, 22, 29, 6, 27, 19, 18, 6, 12, 8},1939);  ==>  "masterpiece"
+```
 ```csharp
 Decode(new int[]{ 20, 12, 18, 30, 21},1939);  ==> "scout"
 Decode(new int[]{  14, 10, 22, 29, 6, 27, 19, 18, 6, 12, 8},1939);  ==>  "masterpiece"
 ```
+
+# Digital cypher series
+- [Digital cypher vol 1](https://www.codewars.com/kata/592e830e043b99888600002d)
+- [Digital cypher vol 2](https://www.codewars.com/kata/592edfda5be407b9640000b2)
+- [Digital cypher vol 3 - missing key](https://www.codewars.com/kata/5930d8a4b8c2d9e11500002a)

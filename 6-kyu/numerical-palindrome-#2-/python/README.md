@@ -18,6 +18,12 @@ palindrome(1215) => true
 palindrome(1294) => false 
 palindrome("109982") => "Not valid"
 ```
+
+```haskell
+
+In Haskell, this returns a Maybe Bool, with Nothing for an input less than zero.
+```
+
 <h2><u>Other Kata in this Series:</u></h2> 
 <a href="https://www.codewars.com/kata/58ba6fece3614ba7c200017f">Numerical Palindrome #1</a>
 <br><a href="https://www.codewars.com/kata/numerical-palindrome-number-1-dot-5">Numerical Palindrome #1.5</a>

@@ -1,4 +1,4 @@
-There is a sentence which has a mistake in it's ordering.
+There is a sentence which has a mistake in its ordering.
 
 The part with a capital letter should be the first word.
 

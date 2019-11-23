@@ -1,0 +1,1 @@
+const integrate = (coef, exp) => `${coef/(exp+1)}x^${exp+1}`;

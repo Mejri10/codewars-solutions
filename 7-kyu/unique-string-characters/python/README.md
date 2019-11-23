@@ -11,3 +11,5 @@ Notice also that you return the characters from the first string concatenated wi
 More examples in the tests cases. 
 
 Good luck!
+
+Please also try [Simple remove duplicates](https://www.codewars.com/kata/5ba38ba180824a86850000f7)

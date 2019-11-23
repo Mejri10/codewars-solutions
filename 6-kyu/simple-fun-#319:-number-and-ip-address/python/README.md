@@ -1,26 +1,27 @@
 # Task
 
 An IP address contains four numbers(0-255) and separated by dots. It can be converted to a number by this way:
-```
-Example IP address: 10.0.3.193
+
+
+Given a string `s` represents a number or an IP address. Your task is to convert it to another representation(`number to IP address` or `IP address to number`).
+
+You can assume that all inputs are valid.
+
+# Example
+
+Example IP address: `10.0.3.193`
 
 Convert each number to a 8-bit binary string
-(may needs to pad leading zeros to the left side)
+(may needs to pad leading zeros to the left side):
+```
 10  -->  00001010
 0   -->  00000000
 3   -->  00000011
 193 -->  11000001
-
-Combine these four strings:
-00001010 00000000 00000011 11000001
-
-And then convert them to a decimal number:
-167773121
 ```
+Combine these four strings: `00001010 00000000 00000011 11000001` and then convert them to a decimal number:
+`167773121`
 
-Given a string `s` represents a number or an IP address. Your task is to convert it to another representation(`number to IP address or IP address to number`).
-
-You can assume that all inputs are valid.
 
 # Input/Output
 

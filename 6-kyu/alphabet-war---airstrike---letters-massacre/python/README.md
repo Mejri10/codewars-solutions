@@ -5,7 +5,7 @@ There are two groups of hostile letters. The tension between left side letters a
 
 # Task
 
-Write a function that accepts `fight` string consists of only small letters and `*` which means a bomb drop place. Return who wins the fight. When the left side wins return `Left side wins!`, when the right side wins return `Right side wins!`, in other case return `Let's fight again!`.
+Write a function that accepts `fight` string consists of only small letters and `*` which means a bomb drop place. Return who wins the fight after bombs are exploded. When the left side wins return `Left side wins!`, when the right side wins return `Right side wins!`, in other case return `Let's fight again!`.
 
 The left side letters and their power:
 ```
@@ -37,6 +37,37 @@ alphabetWar("s*zz");           //=> Right side wins!
 alphabetWar("*zd*qm*wp*bs*"); //=> Let's fight again!
 alphabetWar("zzzz*s*");       //=> Right side wins!
 alphabetWar("www*www****z");  //=> Left side wins!
+```
+```c
+alphabet_war("s*zz");          /* => Right side wins!  */
+alphabet_war("*zd*qm*wp*bs*"); /* => Let's fight again! */
+alphabet_war("zzzz*s*");       /* => Right side wins!  */
+alphabet_war("www*www****z");  /* => Left side wins!  */
+```
+```nasm
+global main:
+extern alphabet_war
+
+section .data
+strz:    db  "s*zz", 0h0
+strzd:   db  "*zd*qm*wp*bs*", 0h0
+strzzz:  db  "zzzz*s*", 0h0
+strwww:  db  "www*www****z", 0h0
+
+section .text
+main:
+    mov rdi, strz
+    call alphabet_war    ; RAX <- Right side wins!
+    
+    mov rdi, strzd
+    call alphabet_war    ; RAX <- Let's fight again!
+    
+    mov rdi, strzzz
+    call alphabet_war    ; RAX <- Right side wins!
+    
+    mov rdi, strwww
+    call alphabet_war    ; RAX <- Left side wins!    
+    ret
 ```
 
 # Alphabet war Collection

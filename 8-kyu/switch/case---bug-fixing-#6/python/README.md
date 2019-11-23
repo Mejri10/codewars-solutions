@@ -3,7 +3,7 @@
 Oh no! Timmy's evalObject function doesn't work. He uses Switch/Cases to evaluate the given properties of an object, can you fix timmy's function?
 </p>
 
-
+<!--
 <br><br><br><br>
 <select id="collectionSelect"/>
 <iframe style="visibility:hidden;display:none;" onload="
@@ -111,3 +111,4 @@ function getData() {
 }
 getData();
 })(this)" />
+-->

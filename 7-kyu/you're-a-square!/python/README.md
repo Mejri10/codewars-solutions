@@ -12,73 +12,44 @@ Given an integral number, determine if it's a [square number](https://en.wikiped
 The tests will _always_ use some integral number, so don't worry about that in dynamic typed languages.
 
 ### Examples
-```ruby
+
+```
 is_square (-1) # => false
+is_square   0 # => true
 is_square   3 # => false
 is_square   4 # => true
 is_square  25 # => true
 is_square  26 # => false
 ```
-```python
-is_square (-1) # => false
-is_square   3 # => false
-is_square   4 # => true
-is_square  25 # => true
-is_square  26 # => false
+```scala
+isSquare(-1) returns  false
+isSquare(0) returns   true
+isSquare(3) returns   false
+isSquare(4) returns   true
+isSquare(25) returns  true  
+isSquare(26) returns  false
 ```
-```javascript
-isSquare(-1) // => false
-isSquare( 3) // => false
-isSquare( 4) // => true
-isSquare(25) // => true
-isSquare(26) // => false
+```c
+is_square(-1) // returns false
+is_square(0)  // returns true
+is_square(3)  // returns false
+is_square(4)  // returns true
+is_square(25) // returns true  
+is_square(26) // returns false
 ```
-```typescript
-isSquare(-1) // => false
-isSquare( 3) // => false
-isSquare( 4) // => true
-isSquare(25) // => true
-isSquare(26) // => false
+```julia
+issquare(-1) # returns false
+issquare(0)  # returns true
+issquare(3)  # returns false
+issquare(4)  # returns true
+issquare(25) # returns true  
+issquare(26) # returns false
 ```
-```coffeescript
-isSquare(-1) # => false
-isSquare( 3) # => false
-isSquare( 4) # => true
-isSquare(25) # => true
-isSquare(26) # => false
-```
-```haskell
-isSquare (-1) `shouldBe` False
-isSquare   3 `shouldBe` False
-isSquare   4 `shouldBe` True
-isSquare  25 `shouldBe` True
-isSquare  26 `shouldBe` False
-```
-```java
-Square.isSquare(-1) // => false
-Square.isSquare( 3) // => false
-Square.isSquare( 4) // => true
-Square.isSquare(25) // => true
-Square.isSquare(26) // => false
-```
-```csharp
-Kata.isSquare(-1) // => false
-Kata.isSquare( 3) // => false
-Kata.isSquare( 4) // => true
-Kata.isSquare(25) // => true
-Kata.isSquare(26) // => false
-```
-```dart
-isSquare(-1) // => false
-isSquare( 3) // => false
-isSquare( 4) // => true
-isSquare(25) // => true
-isSquare(26) // => false
-```
-```cpp
-is_square (-1) // false
-is_square (3)  // false
-is_square (4)  // true
-is_square (25) // true
-is_square (26) // false
+```elixir
+Math.square?(-1) # returns false
+Math.square?(0)  # returns true
+Math.square?(3)  # returns false
+Math.square?(4)  # returns true
+Math.square?(25) # returns true  
+Math.square?(26) # returns false
 ```

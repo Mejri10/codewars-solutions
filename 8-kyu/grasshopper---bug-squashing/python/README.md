@@ -4,7 +4,7 @@ You are creating a text-based terminal version of your favorite board game. In t
 
 ---
 
-You are using a library that already has the functions below. Create a function named that calls the functions in the proper order.
+You are using a library that already has the functions below. Create a function named `main` that calls the functions in the proper order.
 
 ```javascript
 - combat

@@ -7,6 +7,11 @@ solution([1, 2, 10, 50, 5]); // should return [1,2,5,10,50]
 solution(null); // should return []
 ```
 
+```typescript
+solution([1, 2, 10, 50, 5]); // should return [1, 2, 5, 10, 50]
+solution([]); // should return []
+```
+
 ```coffeescript
 solution([1, 2, 10, 50, 5]) # should return [1,2,5,10,50]
 solution(null) # should return []
@@ -30,4 +35,9 @@ SortNumbers(null); // should return new int[] { }
 ```rust
 sort_numbers(&vec![1, 2, 3, 10, 5]); // should return vec![1, 2, 3, 5, 10]
 sort_numbers(&vec![]); // should return !vec[]
+```
+
+```Hakell
+sortNumbers [1, 2, 10, 50, 5] = Just [1, 2, 5, 10, 50]
+sortNumbers [] = Nothing
 ```

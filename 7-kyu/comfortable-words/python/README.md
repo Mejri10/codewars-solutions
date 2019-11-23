@@ -4,7 +4,7 @@ That being said, create a function which receives a word and returns `true/True`
 
 The word will always be a string consisting of only ascii letters from `a` to `z`.
 
-![alt text](http://spaceplace.nasa.gov/review/sign-here-typing/keyboard.en.jpg)
+![](https://i.imgur.com/1I7Uuc5.jpg)
 
 To avoid problems with image availability, here's the lists of letters for each hand:
 

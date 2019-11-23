@@ -7,3 +7,5 @@ If a string contains all unique characters, then return just the first character
 Example: for input `"trend"` function should return `'t'`  
   
 You can assume, that the input string has always non-zero length.
+
+If there is no repeating character, return `null` in JS or Java, and `None` in Python.

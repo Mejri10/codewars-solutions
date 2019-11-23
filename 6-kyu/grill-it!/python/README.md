@@ -30,6 +30,15 @@ code    : 000101
 result  : df
 
 ```
+```java
+grille("abcdef", 5)  => "df"
+
+message : abcdef
+code    : 000101
+----------------
+result  : df
+
+```
 
 
 

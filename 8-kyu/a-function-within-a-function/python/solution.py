@@ -1,1 +1,0 @@
-always = lambda n=0: (lambda: n)

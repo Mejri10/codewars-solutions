@@ -24,6 +24,12 @@ var result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["
 
 ```
 
+```kotlin
+var result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", charArrayOf('#', '!'))
+// result should == "apples, pears\ngrapes\nbananas"
+
+```
+
 ```coffeescript
 result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"])
 # result should == "apples, pears\nograpes\nbananas"
@@ -36,8 +42,19 @@ result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", 
 
 ```
 
+```crystal
+result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"])
+# result should == "apples, pears\ngrapes\nbananas"
+
+```
+
 ```python
 result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"])
 # result should == "apples, pears\ngrapes\nbananas"
 
+```
+
+```csharp
+string stripped = StripCommentsSolution.StripComments("apples, pears # and bananas\ngrapes\nbananas !apples", new [] { "#", "!" })
+// result should == "apples, pears\ngrapes\nbananas"
 ```

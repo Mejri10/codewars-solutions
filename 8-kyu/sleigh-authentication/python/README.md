@@ -32,3 +32,9 @@ authenticate? "Santa",       "Ho Ho Ho!" #=> false
 authenticate? "Santa Claus", "Ho Ho!"    #=> false
 authenticate? "jhoffner",    "CodeWars"  #=> false
 ```
+```java
+sleigh.authenticate("Santa Claus", "Ho Ho Ho!") # must return True
+sleigh.authenticate("Santa', 'Ho Ho Ho!") # must return False
+sleigh.authenticate("Santa Claus", "Ho Ho!") # must return False
+sleigh.authenticate("jhoffner", "CodeWars") # Nope, even Jak
+```

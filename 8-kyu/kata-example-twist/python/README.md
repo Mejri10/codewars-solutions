@@ -28,3 +28,6 @@ public static class Kata
   public static string[] Websites;
 }
 ```
+```haskell
+websites = []
+```

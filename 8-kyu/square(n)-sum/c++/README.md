@@ -1,33 +1,7 @@
-Complete the `squareSum`/`square_sum`/`SquareSum` method so that it squares each number passed into it and then sums the results together. 
+Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
-For example:
-```javascript
-squareSum([1, 2, 2]); // should return 9
-```
-```coffeescript
-squareSum([1, 2, 2]) # should return 9
-```
-```python
-square_sum([1, 2, 2]) # should return 9
-```
-```ruby
-squareSum([1, 2, 2]) # should return 9
-```
-```crystal
-squareSum([1, 2, 2]) # should return 9
-```
-```haskell
-squareSum [1, 2, 2] -- should return 9
-```
-```dart
-squareSum([1, 2, 2]); // should return 9
-```
-```rust
-square_sum([1, 2, 2]) // should return 9
-```
-```cpp
-square_sum({1, 2, 2}); // should return 9
-```
-```csharp
-Kata.SquareSum(new int[] {1, 2, 2}) # should return 9
+For example, for `[1, 2, 2]` it should return `9` because `1^2 + 2^2 + 2^2 = 9`.
+
+```if:racket
+In Racket, use a list instead of an array, so '(1 2 3) should return 9.
 ```

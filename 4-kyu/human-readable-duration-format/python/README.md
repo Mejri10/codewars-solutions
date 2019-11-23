@@ -4,32 +4,70 @@ The function must accept a non-negative integer. If it is zero, it just returns 
 
 It is much easier to understand with an example:
 
+```c
+formatDuration (62)    // returns "1 minute and 2 seconds"
+formatDuration (3662)  // returns "1 hour, 1 minute and 2 seconds"
+```
+```nasm
+mov edi, 62
+call fmtduration      ; RAX <- `1 minute and 2 seconds\0`
+
+mov edi, 3662
+call fmtduration      ; RAX <- `1 hour, 1 minute and 2 seconds\0`
+```
+```cpp
+format_duration(62)    // returns "1 minute and 2 seconds"
+format_duration(3662)  // returns "1 hour, 1 minute and 2 seconds"
+```
 ```javascript
-  formatDuration(62)    // returns "1 minute and 2 seconds"
-  formatDuration(3662)  // returns "1 hour, 1 minute and 2 seconds"
+formatDuration(62)    // returns "1 minute and 2 seconds"
+formatDuration(3662)  // returns "1 hour, 1 minute and 2 seconds"
 ```
 ```python
-  format_duration(62)    # returns "1 minute and 2 seconds"
-  format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
+format_duration(62)    # returns "1 minute and 2 seconds"
+format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
 ```
 ```ruby
-  format_duration(62)    # returns "1 minute and 2 seconds"
-  format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
+format_duration(62)    # returns "1 minute and 2 seconds"
+format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
 ```
 ```elixir
-  format_duration(62)    # returns "1 minute and 2 seconds"
-  format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
+format_duration(62)    # returns "1 minute and 2 seconds"
+format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
 ```
 ```php
-  format_duration(62)    # returns "1 minute and 2 seconds"
-  format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
+format_duration(62)    # returns "1 minute and 2 seconds"
+format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
 ```
 ```haskell
-  formatDuration 62     -- returns "1 minute and 2 seconds"
-  formatDuration 3662   -- returns "1 hour, 1 minute and 2 seconds"
+formatDuration 62     -- returns "1 minute and 2 seconds"
+formatDuration 3662   -- returns "1 hour, 1 minute and 2 seconds"
+```
+```java
+TimeFormatter.formatDuration(62)   //returns "1 minute and 2 seconds"
+TimeFormatter.formatDuration(3662) //returns "1 hour, 1 minute and 2 seconds"
+```
+```groovy
+Kata.formatDuration(62)   //returns "1 minute and 2 seconds"
+Kata.formatDuration(3662) //returns "1 hour, 1 minute and 2 seconds"
+```
+```shell
+duration 62            # echos "1 minute and 2 seconds"
+duration 3662          # echos "1 hour, 1 minute and 2 seconds"
+```
+```julia
+formatduration(62)    # returns "1 minute and 2 seconds"
+formatduration(3662)  # returns "1 hour, 1 minute and 2 seconds"
+```
+```racket
+(format-duration 62)    ; returns "1 minute and 2 seconds"
+(format-duration 3662)  ; returns "1 hour, 1 minute and 2 seconds"
 ```
 
+**For the purpose of this Kata, a year is 365 days and a day is 24 hours.**
+
 Note that spaces are important.
+
 
 ### Detailed rules
 
@@ -44,6 +82,3 @@ Different components have different unit of times. So there is not repeated unit
 A component will not appear at all if its value happens to be zero.  Hence, `1 minute and 0 seconds` is not valid, but it should be just `1 minute`.
 
  A unit of time must be used "as much as possible". It means that the function should not return `61 seconds`, but `1 minute and 1 second` instead.  Formally, the duration specified by  of a component must not be greater than any valid more significant unit of time.
-
-
-For the purpose of this Kata, a year is 365 days and a day is 24 hours.

@@ -1,0 +1,1 @@
+const spacify = str => str.replace(/(.)/gi, '$1 ').trim();

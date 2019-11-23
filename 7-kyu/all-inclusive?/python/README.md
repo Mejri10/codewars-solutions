@@ -10,7 +10,7 @@ Output of function `contain_all_rots(strng, arr) (or containAllRots or contain-a
 - `false` otherwise
 (C returns 0)
 
-#Examples:
+## Examples:
 ```
 contain_all_rots(
   "bsjq", ["bsjq", "qbsj", "sjqb", "twZNsslC", "jqbs"]) -> true
@@ -19,7 +19,7 @@ contain_all_rots(
   "Ajylvpy", ["Ajylvpy", "ylvpyAj", "jylvpyA", "lvpyAjy", "pyAjylv", "vpyAjyl", "ipywee"]) -> false)
 ```
 
-# Note: 
+## Note: 
 Though not correct in a mathematical sense
 
 - we will consider that there are no rotations of `strng == ""`
@@ -27,5 +27,7 @@ Though not correct in a mathematical sense
 
 Ref: <https://en.wikipedia.org/wiki/String_(computer_science)#Rotations>
 
-# Bash:
-For bash the array is replaced by a string (see "RUN sample tests). 
+```if:shell
+## Bash:
+For bash the array is replaced by a string (see "RUN sample tests"). 
+```

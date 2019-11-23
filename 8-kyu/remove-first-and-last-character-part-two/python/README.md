@@ -1,3 +1,1 @@
-This is a spin off of my first 	[Kata](http://www.codewars.com/kata/56bc28ad5bdaeb48760009b0), you are given a list of characters as a comma separated string. Write a function to return a string containing all except the first and last characters, separated by spaces. If the input string is empty, or the removal of the first and last items would cause the string to be empty, return null value.
-
-Arrays are joined by adding a single space between each consecutive array element.
+This is a spin off of my first [kata](http://www.codewars.com/kata/56bc28ad5bdaeb48760009b0). You are given a list of character sequences as a comma separated string. Write a function which returns another string containing all the character sequences except the first and the last ones. If the input string is empty, or the removal of the first and last items would cause the string to be empty, return a null value.

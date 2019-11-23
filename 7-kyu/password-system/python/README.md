@@ -1,6 +1,6 @@
 <p>In Star Labs we use password system to unlock the lab doors and only Team Flash is given the password for these labs. Password system comprises of <b>n x n</b> keypad (n>0).</p>
 <p>One day Zoom saw Cisco using the password. He figured out that the password is symmetric about the centre point (centre point for n*n keypad will be point with co-ordinates (n/2, n/2)). Now he has to try all possible symmetric combinations to unlock the door. Since he has not enough time he asks you to tell if given password is symmetric or not.</p>
-<p>You will be given a n x n binary grid containing elements as 0 if that key is not used and 1 if that key is used. You need to tell whether the given binary grid is symmetric according to the centre point.</p>
+<p>You will be given a m x n binary grid containing elements as 0 if that key is not used and 1 if that key is used. You need to tell whether the given binary grid is symmetric according to the centre point. The grid might not be square.</p>
 
 <h1>Your Task</h1>
 

@@ -24,7 +24,7 @@ Input parameters are ``sides`` of given triangle. All input values are non-negat
 </tr>
 </table>
 
-<h2>Examples:</h2>
+### Examples:
 ```javascript
 triangleType(2, 4, 6); // return 0 (Not triangle)
 triangleType(8, 5, 7); // return 1 (Acute, angles are approx. 82°, 38° and 60°)
@@ -54,6 +54,12 @@ triangle_type(7, 12, 8) # return 3 (Obtuse, angles are approx. 34°, 106° and 4
 (triangle-type 8 5 7)  ; return 1 (Acute, angles are approx. 82°, 38° and 60°)
 (triangle-type 3 4 5)  ; return 2 (Right, angles are approx. 37°, 53° and exactly 90°)
 (triangle-type 7 12 8) ; return 3 (Obtuse, angles are approx. 34°, 106° and 40°)
+```
+```c
+triangleType(2, 4, 6)  // returns 0 (not a triangle)
+triangleType(8, 5, 7)  // returns 1 (Acute, angles are approx. 82°, 38° and 60°)
+triangleType(3, 4, 5)  // returns 2 (Right, angles are approx. 37°, 53° and exactly 90°)
+triangleType(7, 12, 8) // returns 3 (Obtuse, angles are approx. 34°, 106° and 40°)
 ```
 
 If you stuck, this can help you: http://en.wikipedia.org/wiki/Law_of_cosines. But you can solve this kata even without angle calculation.

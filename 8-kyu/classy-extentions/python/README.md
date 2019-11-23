@@ -1,5 +1,5 @@
 <h1>Classy Extensions</h1>
-Classy Extensions, this kata is mainly aimed at the new JS ES6 Update introducing class extends You will be preloaded with the Animal class, so you should only edit the Cat class.
+Classy Extensions, this kata is mainly aimed at the new JS ES6 Update introducing <em>extends</em> keyword. You will be preloaded with the Animal class, so you should only edit the Cat class.
 
 <h3>Task</h3>
 Your task is to complete the Cat class which Extends Animal and replace the speak method to return the cats name + meows.

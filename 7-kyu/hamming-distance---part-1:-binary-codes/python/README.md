@@ -8,6 +8,14 @@ Example:
 hamming_distance('100101', '101001') == 2
 hamming_distance('1010', '0101') == 4
 ```
+```ruby
+hamming_distance('100101', '101001') == 2
+hamming_distance('1010', '0101') == 4
+```
+```javascript
+hammingDistance('100101', '101001') == 2
+hammingDistance('1010', '0101') == 4
+```
 ```csharp
 Kata.HammingDistance("100101', "101001") == 2
 Kata.HammingDistance("1010', "0101") == 4
@@ -15,4 +23,12 @@ Kata.HammingDistance("1010', "0101") == 4
 ```php
 hamming_distance('100101', '101001'); // => 2
 hamming_distance('1010', '0101'); // => 4
+```
+```haskell
+hammingDistance "100101" "101001" == 2
+hammingDistance "1010" "0101" == 4
+```
+```purescript
+hammingDistance "100101" "101001" == 2
+hammingDistance "1010" "0101" == 4
 ```

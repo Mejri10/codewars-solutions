@@ -5,4 +5,4 @@ You know that a piece of paper has a thickness of `0.0001m`. Given `distance` in
 
 Note: Of course you can't do half a fold. You should know what this means ;P
 
-Also, if somebody is giving you a non-positive distance, it's clearly bogus and you should yell at them by returning `null` (or whatever equivalent in your language).
+Also, if somebody is giving you a negative distance, it's clearly bogus and you should yell at them by returning `null` (or whatever equivalent in your language. In Shell please return `None`).

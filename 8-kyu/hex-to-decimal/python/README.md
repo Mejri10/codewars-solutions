@@ -1,1 +1,1 @@
-Write function hexToDec which converts hex number (given as a string) to decimal number.
+Complete the function which converts hex number (given as a string) to a decimal number.

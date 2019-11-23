@@ -1,0 +1,1 @@
+const onlyOne = (...args) => args.reduce((a, b) => a + b, 0) === 1;

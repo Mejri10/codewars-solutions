@@ -1,6 +1,6 @@
 Clients place orders to a stockbroker as strings. The order can be simple or multiple.
   
-  Type of a simple order: Quote /space/ Quantity /space/ Price /space/ Status 
+  Type of a simple order: Quote/white-space/Quantity/white-space/Price/white-space/Status
   
   where Quote is formed of non-whitespace character, 
   Quantity is an int, 
@@ -25,7 +25,7 @@ Clients place orders to a stockbroker as strings. The order can be simple or mul
   
 `"Buy: b Sell: s"`
   where b and s are 'double' 
-  formatted with no decimal (rounded to integers), b representing the total price of bought stocks and s the total price of sold stocks.
+  formatted with no decimal, b representing the total price of bought stocks and s the total price of sold stocks.
   
   Example: 
   
@@ -45,5 +45,6 @@ Clients place orders to a stockbroker as strings. The order can be simple or mul
   
   `"Buy: 100 Sell: 56041; Badly formed 1: ZNGA 1300 2.66 ;"`
   
-  Note:
-  Due to Codewars whitespace differences will not always show up in test results.
+  Notes:
+  - Due to Codewars whitespace differences will not always show up in test results.
+  - With Golang use a format with "%.0f" for "Buy" and "Sell".

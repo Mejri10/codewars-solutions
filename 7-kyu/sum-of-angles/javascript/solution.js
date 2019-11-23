@@ -1,0 +1,1 @@
+const angle = a => (a - 2) * 180

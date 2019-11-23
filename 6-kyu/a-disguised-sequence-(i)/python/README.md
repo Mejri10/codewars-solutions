@@ -3,8 +3,8 @@ Given <code>u<sub>0</sub> = 1, u<sub>1</sub> = 2</code> and the relation
 calculate <code>u<sub>n</sub> for any integer n >= 0</code>.
 #Examples
 
-fct(n) returns <code>u<sub>n</sub></code>: 
-` fct(17) -> 131072, fct(21) -> 2097152`
+fcn(n) returns <code>u<sub>n</sub></code>: 
+` fcn(17) -> 131072, fcn(21) -> 2097152`
 
 Remark:
 You can take two points of view to do this kata: 

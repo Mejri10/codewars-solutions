@@ -1,7 +1,7 @@
 Ahoy matey!
 
 You are a leader of a small pirate crew. And you have a plan.
-With the help of OOP you wish to make a pretty eficient system to identify ships with a heavy booty on board. 
+With the help of OOP you wish to make a pretty efficient system to identify ships with a heavy booty on board. 
 
 Unfortunattely for you, people weigh a lot this days, so how do you know if a ship if full of gold and not people?
 
@@ -31,23 +31,25 @@ public class Ship
   }
 }
 ```
-Every time your spies see a new ship enter the dock, they will create a new ship object:
+
+Every time your spies see a new ship enter the dock, they will create a new ship object based on their observations:
+
+* draft - an estimate of the ship's weight based on how low it is in the water
+* crew - the count of crew on board
+
 ```javascript
-var titanic = new Ship(15,10);
+var titanic = new Ship(15, 10);
 ```
 ```python
-Titanic = Ship(15,10)
+Titanic = Ship(15, 10)
 ```
 ```csharp
 Ship titanic = new Ship(15, 10);
 ```
 
-Now comes the tricky part:
-An average man will sink the ship by exactly `1.5` units. (Ship's draft goes up)
-That means the draft can show the estimated weight of the presumable booty aboard.
+Taking into account that an average crew member on board adds `1.5` units to the draft, a ship that has a draft of more than `20` without crew is considered worthy to loot. Any ship weighing that much must have a lot of booty!
 
-if it weighs more than `20` without people, it is worthy to board.
-Your system should have a method
+Add the method
 ```javascript
 isWorthIt
 ``` 
@@ -57,13 +59,14 @@ is_worth_it
 ```csharp
 IsWorthIt
 ```
-to decide that:
+to decide if the ship is worthy to loot. For example:
 
 ```javascript
-titanic.isWorthIt() //return false
+titanic.isWorthIt() // return false
 ```
 ```python
-Titanic.is_worth_it() #return false
+Titanic.is_worth_it()
+False
 ```
 ```csharp
 titanic.IsWorthIt() => false

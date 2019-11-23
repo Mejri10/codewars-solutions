@@ -1,1 +1,1 @@
-This function returns something strange. What's wrong?
+This function should return an object, but it's not doing what's intended. What's wrong?

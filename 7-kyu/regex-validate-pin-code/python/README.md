@@ -10,6 +10,16 @@ validatePIN("1234") === true
 validatePIN("12345") === false
 validatePIN("a234") === false
 ```
+```coffeescript
+validatePIN("1234") == true
+validatePIN("12345") == false
+validatePIN("a234") == false
+```
+```typescript
+validatePIN("1234") === true
+validatePIN("12345") === false
+validatePIN("a234") === false
+```
 ```python
 validate_pin("1234") == True
 validate_pin("12345") == False
@@ -19,4 +29,9 @@ validate_pin("a234") == False
 ValidatePin("1234") => true
 ValidatePin("12345") => false
 ValidatePin("a234") => false
+```
+```java
+Solution.validatePin("1234") === true
+Solution.validatePin("12345") === false
+Solution.validatePin("a234") === false
 ```

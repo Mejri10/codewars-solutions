@@ -2,16 +2,16 @@
  <span style="float:right;"><font face="Impact" size="5" ><A HREF="http://www.codewars.com/kata/557341907fbf439911000022">NEXT KATA ></A></font></span></p>
  
  
- ###Task:
-You have to write a function `pattern` which returns the following Pattern(See Pattern & Examples) upto `n` number of rows. 
+### Task:
+You have to write a function `pattern` which returns the following Pattern (See Pattern & Examples) upto `n` number of rows. 
 
-* Note:`Returning` the pattern is not the same as `Printing` the pattern.
+* Note: `Returning` the pattern is not the same as `Printing` the pattern.
 
-####Rules/Note:
+#### Rules/Note:
 * If `n < 1` then it should return "" i.e. empty string.
 * There are `no whitespaces` in the pattern.
 
-###Pattern:
+### Pattern:
 
     (n)(n-1)(n-2)...4321
     (n)(n-1)(n-2)...432
@@ -23,7 +23,7 @@ You have to write a function `pattern` which returns the following Pattern(See P
     (n)(n-1)
     (n)
     
-###Examples:
+### Examples:
 
 * pattern(4):
 

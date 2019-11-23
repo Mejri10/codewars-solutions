@@ -16,6 +16,7 @@ websites = []
 websites = []
 ```
 ```typescript
+export const websites: string[] = [];
 ```
 
 

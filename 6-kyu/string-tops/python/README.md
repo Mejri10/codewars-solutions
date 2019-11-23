@@ -22,3 +22,7 @@ For the above example, the solution for the `abcdefghijklmnopqrstuvwxyz1234` inp
 - The input strings may be very long. Make sure your solution has good performance.
 
 Check the test cases for more samples.
+
+# **Note** for C++
+
+Do not post an issue in my solution without checking if your returned string doesn't have some invisible characters. You read most probably outside of `msg` string.

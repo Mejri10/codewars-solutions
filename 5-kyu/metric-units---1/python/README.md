@@ -40,4 +40,15 @@ meters(5000000);
 // returns "5Mm"
 ```
 
+```haskell
+meters 5
+-- returns "5m"
+
+meters 51500
+-- returns "51.5km"
+
+meters 5000000
+-- returns "5Mm"
+```
+
 See http://en.wikipedia.org/wiki/SI_prefix for a full list of prefixes

@@ -1,4 +1,4 @@
-You have recently discovered thar horses travel in a unique pattern - they're either running (at top speed) or resting (standing still).
+You have recently discovered that horses travel in a unique pattern - they're either running (at top speed) or resting (standing still).
 
 Here's an example of how one particular horse might travel:
 

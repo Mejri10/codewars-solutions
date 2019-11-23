@@ -4,39 +4,31 @@ Write a function `findNeedle()` that takes an `array` full of junk but containin
 
 After your function finds the needle it should return a message (as a string) that says:
 
-`"found the needle at position "` plus the `index` it found the needle
+`"found the needle at position "` plus the `index` it found the needle, so: 
 
-So 
-
-````python
+```python
 find_needle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
-````
-````ruby
+```
+```ruby
 find_needle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
-````
-````javascript
+```
+```elixir
+find_needle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+```
+```javascript
 findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
-````
-````java
+```
+```typescript
+findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+```
+```java
 findNeedle(new Object[] {"hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"})
-````
-````elixir
-find_needle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"])
-````
+```
+```haskell
+findNeedle ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+```
+```racket
+(find-needle '("hay" "junk" "hay" "hay" "moreJunk" "needle","randomJunk"))
+```
 
-should return
-````python
-'found the needle at position 5'
-````
-````ruby
-'found the needle at position 5'
-````
-````javascript
-'found the needle at position 5'
-````
-````java
-"found the needle at position 5"
-````
-````elixir
-"found the needle at position 5"
-````
+should return `"found the needle at position 5"`

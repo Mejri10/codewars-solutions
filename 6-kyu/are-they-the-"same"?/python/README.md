@@ -26,11 +26,17 @@ b = [121, 14641, 20736, 36100, 25921, 361, 20736, 361]
 
 ## Remarks
 `a` or `b` might be `[]` (all languages except R, Shell).
-`a` or `b` might be `nil` or `null` or `None` (except in Haskell, Elixir, C++, Rust, R, Shell). 
+`a` or `b` might be `nil` or `null` or `None` or `nothing` (except in Haskell, Elixir, C++, Rust, R, Shell, PureScript). 
 
 If `a` or `b` are `nil` (or `null` or `None`), the problem doesn't make sense so return false.
 
-If `a` or `b` are empty the result is evident by itself.
+If `a` or `b` are empty then the result is self-evident.
 
+~~~if:c
 ## Note for C
 The two arrays have the same size `(> 0)` given as parameter in function `comp`.
+~~~
+```racket
+a or b are empty or not empty lists.
+
+```

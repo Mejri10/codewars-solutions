@@ -1,0 +1,10 @@
+const Adam = (s) => "Adam" + (s === undefined ? '.' : (' ' + s));
+const has = (s) => "has" + (s === undefined ? '.' : (' ' + s));
+const a = (s) => "a" + (s === undefined ? '.' : (' ' + s));
+const dog = (s) => "dog" + (s === undefined ? '.' : (' ' + s));
+const The = (s) => "The" + (s === undefined ? '.' : (' ' + s));
+const name = (s) => "name" + (s === undefined ? '.' : (' ' + s));
+const of = (s) => "of" + (s === undefined ? '.' : (' ' + s));
+const the = (s) => "the" + (s === undefined ? '.' : (' ' + s));
+const is = (s) => "is" + (s === undefined ? '.' : (' ' + s));
+const also = (s) => "also" + (s === undefined ? '.' : (' ' + s));

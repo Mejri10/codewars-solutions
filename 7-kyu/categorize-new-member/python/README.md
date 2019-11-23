@@ -24,8 +24,14 @@ which is a List<List<int>>
 ```csharp
 new int[][] {new int[] {18, 20}, new int[] {45, 2}, new int[] {61, 12}, new int[] {37, 6}, new int[] {21, 21}, new int[] {78, 9}}
 ```
-```Fsharp
+```fsharp
 [[18; 20];[45; 2];[61; 12];[37; 6];[21; 21];[78; 9]]
+```
+```rust
+vec![(45, 12), (55,21), (19, -2), (104, 20)])
+```
+```groovy
+[new Tuple(45, 12), new Tuple(55,21), new Tuple(19, -2), new Tuple(104, 20)]
 ```
 
 ## Output
@@ -47,6 +53,12 @@ Output will consist of a list of string values (in Haskell: `Open` or `Senior`) 
 ```csharp
 new string[] {"Open", "Open", "Senior", "Open", "Open", "Senior"}
 ```
-```Fsharp
+```fsharp
 ["Open"; "Open"; "Senior"; "Open"; "Open"; "Senior"]
+```
+```rust
+vec!["Open", "Senior", "Open", "Senior"]
+```
+```groovy
+["Open", "Senior", "Open", "Senior"]
 ```

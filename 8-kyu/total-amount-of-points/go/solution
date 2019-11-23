@@ -1,0 +1,24 @@
+package kata
+
+import (
+  "strings"
+  "strconv"
+)
+
+func Points(games []string) int {
+  points := 0
+  for _, match := range games {
+    scores := strings.Split(match, ":")
+    ourScore, _ := strconv.Atoi(scores[0])
+    othersScore, _ := strconv.Atoi(scores[1])
+    
+    if ourScore > othersScore {
+      points += 3
+    } else if ourScore < othersScore {
+      points += 0
+    } else {
+      points += 1
+    }
+  }
+  return points
+}

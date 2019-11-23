@@ -11,7 +11,7 @@ All input values are valid. Round to two decimal places.
 
 This Kata is based on a example from Fluent Python book.
 
-## Javascript // Lua:
+## Javascript // Lua // C++:
 
 Create a function `runningAverage()` that returns a callable function object. Update the series with each given value and calculate the current average.
 

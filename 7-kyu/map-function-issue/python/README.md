@@ -2,14 +2,22 @@ In computer science, a programming language is said to have first-class function
 
 First-class functions are a necessity for the functional programming style, in which the use of higher-order functions is a standard practice. A simple example of a higher-ordered function is the map function, which takes, as its arguments, a function and a list, and returns the list formed by applying the function to each member of the list. For a language to support map, it must support passing a function as an argument. See more on https://en.wikipedia.org/wiki/First-class_function
 
-Your task is to rewrite your own map() function with some quirk and error message which takes an array and a function as an argument and returns another array of trues and falses. If a number in the array is even it returns 'true' and if number is odd it returns 'false'. 
+Your task is to rewrite your own `map` function which takes :
 
-Once you build your function which is the argument for map function you need to store it in variable called 'func'.
+- an array 
+- a predicate function `func` which returns true (boolean) with even arguments
 
-For example the result would be like below once map function is called:
+For example :
 
-map([1,2,3,4],func);  // calling the map function
+```
+map([1,2,3,4],func)
 
-[ false, true, false, true ]   // returned result
+produces
 
-Second argument of map function must be function, so it should be validated and give string 'given argument is not a function' in case the argument is not a function. If array contains not numbers it returns string 'array should contain only numbers'. So make sure all elements of the array are numbers.
+[ false, true, false, true ]  
+```
+
+The code also has to perform input validation, return  :
+
+- 'given argument is not a function' if `func` is not a function
+- 'array should contain only numbers' if any elements are not numbers

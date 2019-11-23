@@ -44,5 +44,9 @@ Kata.CountArara(3) // "adak anane"
 
 Kata.CountArara(8) // "adak adak adak adak"
 ```
+```haskell
+countArara(3) -- "adak anane"
 
+countArara(8) -- "adak adak adak adak"
+```
 https://en.wikipedia.org/wiki/Arara_people

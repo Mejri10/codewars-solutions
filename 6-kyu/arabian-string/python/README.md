@@ -14,7 +14,7 @@ camelize("your-NaMe-here") # => YourNameHere
 camelize("testing ABC")    # => TestingAbc
 ```
 ```javascript
-camelize("example name")   # => ExampleName
-camelize("your-NaMe-here") # => YourNameHere
-camelize("testing ABC")    # => TestingAbc
+camelize("example name")   // => ExampleName
+camelize("your-NaMe-here") // => YourNameHere
+camelize("testing ABC")    // => TestingAbc
 ```

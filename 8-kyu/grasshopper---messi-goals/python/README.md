@@ -16,9 +16,17 @@ Copa del Rey | 5
 
 Create three variables and store the appropriate values using the table above:
 
+~~~if:python,ruby
+  - `la_liga_goals`  
+  - `champions_league_goals`
+  - `copa_del_rey_goals`
+~~~  
+~~~if:javascript,csharp
   - `laLigaGoals`  
   - `championsLeagueGoals`
   - `copaDelReyGoals`
+~~~  
 
-Create a fourth variable named `totalGoals`. `totalGoals` should store the sum of all
+
+Create a fourth variable named `totalGoals (javascript, C#) or total_goals (python, ruby)`. `totalGoals/total_goals` should store the sum of all
 of Messi's goals for this year.

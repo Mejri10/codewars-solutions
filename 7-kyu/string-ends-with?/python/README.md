@@ -14,19 +14,7 @@ solution('abc', 'd') # returns false
 solution('abc', 'bc') # returns true
 solution('abc', 'd') # returns false
 ```
-```ruby
-solution('abc', 'bc') # returns true
-solution('abc', 'd') # returns false
-```
-```c
-solution("abc", "bc") # returns true
-solution("abc", "d") # returns false
-```
-```elixir
-solution("abc", "bc") # returns true
-solution("abc", "d") # returns false
-```
-```rust
-solution("abc", "bc") //returns true
-solution("abc", "d") //returns false
+```go
+solution("abc", "bc") // returns true
+solution("abc", "d") // returns false
 ```

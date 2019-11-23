@@ -43,7 +43,3 @@ a = 47129212243960
 checkchoose(a, 50) --> 20
 checkchoose(a + 1, 50) --> -1
 ```
-
-`clojure:
-Use big integers in the calculation of n choose k!
-`

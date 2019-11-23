@@ -1,0 +1,17 @@
+package kata
+
+import (
+  "math"
+  "fmt"
+)
+
+func IterPi(epsilon float64) (int, string) {
+    var i int
+    var f float64
+
+    for math.Abs(math.Pi - f) > epsilon {
+      i++
+      f += 4 * math.Pow(-1.0, float64(i+1)) / float64(2*i - 1)
+    }
+    return i, fmt.Sprintf("%.10f", f)
+}

@@ -1,39 +1,14 @@
-Given a string (CONTAINS ONLY LETTERS), ``string``, you have to find out the number of unique strings (including ``string`` itself) that can be produced by re-arranging the letters of the ``string``. 
+Given a string ``string`` that contains only letters, you have to find out the number of **unique** strings (including ``string`` itself) that can be produced by re-arranging the letters of the ``string``.  Strings are case **insensitive**.
 
-Example: 
+HINT: Generating all the unique strings and calling length on that isn't a great solution for this problem. It can be done a lot faster...
 
-``
-string = "ABC"
-``
 
-``
-uniqcount(string) = 6 #=> ["ABC", "ACB", "BAC", "BCA", "CAB", "CBA"]
-``
+## Examples
 
-Notes: 
-- Find the number of UNIQUE strings!
-- Strings are case insensitive. 
-
-HINT: Getting all the uniq strings and calling length on that isn't a great solution for this problem. It can be done a lot faster..
-
-Examples:
-
-``
-uniqcount("AB") = 2
-``
-
-``
-uniqcount("ABC") = 6
-``
-
-``
-uniqcount("ABA") = 3
-``
-
-``
-uniqcount("AbcD") = 24
-``
-
-``
-uniqcount("ABBb") = 4
-``
+```py
+uniqcount("AB") = 2      # "AB", "BA"
+uniqcount("ABC") = 6     # "ABC", "ACB", "BAC", "BCA", "CAB", "CBA"
+uniqcount("ABA") = 3     # "AAB", "ABA", "BAA"
+uniqcount("ABBb") = 4    # "ABBB", "BABB", "BBAB", "BBBA"
+uniqcount("AbcD") = 24   # "ABCD", etc.
+```
